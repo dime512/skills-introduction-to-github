@@ -1,0 +1,16 @@
+# Workflow Name
+name: First Wodkflow
+
+# Event at twhich the workflow to be triggered
+on :
+  push :
+    workflow_dispatch :
+
+jobs:
+
+  Hello-Job:
+  #runner
+    runs-on: ubuntu-latest
+    steps:
+      - name : Hello World
+        run : echo "Hello World"
